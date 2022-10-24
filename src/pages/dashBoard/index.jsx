@@ -10,7 +10,8 @@ import IconUser from "../../imagess/userIconImage.svg";
 import HomeIcon from '@mui/icons-material/Home';
 import SearchIcon from '@mui/icons-material/Search';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
-import welcomeIMG from "../../imagess/welcomeIMG.svg";
+import welcomeIMG from "../../imagess/tourist-welcome.svg";
+import wave from "../../imagess/wave.svg";
 import CalenderBox from "../../component/calander/calenderBox";
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
 import Web from 'web3';
@@ -167,7 +168,7 @@ return (
 {/* task to do*/}
         </div>
 
-        <div className="Statistics" style={{width:"25rem",padding:"20px 10px 0 10px"}}>
+        <div className="Statistics" style={{display:"flex",justifyContent:"space-evenly",flexDirection:"column",width:"25rem",padding:"20px 10px 0 10px"}}>
           <h2 style={{fontSize:"1.5rem",fontWeight: "500",color:"#793280",marginBottom:"1.5rem"}}>Statistics</h2>
      <div className='statistics-boxes-container'>
 <div className='statistics-boxes'>
@@ -184,7 +185,18 @@ return (
 </div>
 
      </div>
-
+      
+<div className='welcomeBlock'>
+<div style={{display:"flex",flexDirection:"column", justifyContent:"space-around",padding:"5px"}}>
+<h2>$9.99</h2>
+<h3>Pro Plan</h3>
+<p>More productivity with premium!</p>
+  </div>
+  <div style={{width:"60%",height:"100%",backgroundImage:`url(${wave})`,
+  backgroundRepeat:"no-repeat",backgroundSize:"cover",backgroundPosition:"cover", transform:" scaleX(-1)"}}>
+<img src={welcomeIMG} alt="wellcomImage" style={{width:"15rem",height:"100%", transform: "scaleX(-1)"}}/>
+  </div>
+</div>
         </div>
       </div>
     </div>

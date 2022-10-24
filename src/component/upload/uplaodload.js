@@ -2,7 +2,6 @@ import { Box, Button, Select } from '@mui/material'
 import { borderBottom } from '@mui/system';
 import DStorage from "../../components/abis/DStorage.json"
 import React,{useState}from 'react';
-import Welocome from "../../imagess/welcomeIMG.svg";
 
 
 import Boxes from '../onLoadBoxes/Boxes';
@@ -146,7 +145,7 @@ const WelcomeCard=()=>{
 <h2>Welcome Back, </h2>
 <p style={{fontSize:"20px"}}>Get the power to take your BlockDoc to the next level</p>
     </div>
-<img src={Welocome} alt="welcom" style={{width:"200px",height:"200px",alignSelf:"end",}}/>
+<img  alt="welcom" style={{width:"200px",height:"200px",alignSelf:"end",}}/>
 </div>
         </div>
         </>
