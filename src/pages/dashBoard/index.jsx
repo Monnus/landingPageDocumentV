@@ -4,15 +4,12 @@ import Tablecomponent from '../../component/upload/uplaodload'
 // import Navbar from '../../components/navbar/Navbar'
 import { WelcomeCard,UplaodToBlockchainBoxes,DisplayUplaodTable,SelectBox} from "../../component/upload/uplaodload"
 import "./index.css";
+import Radio from '@mui/joy/Radio';
+import Box from '@mui/joy/Box';
 import IconUser from "../../imagess/userIconImage.svg";
 import HomeIcon from '@mui/icons-material/Home';
-import InfoIcon from '@mui/icons-material/Info';
-import AirplanemodeActiveIcon from '@mui/icons-material/AirplanemodeActive';
-import GridViewIcon from '@mui/icons-material/GridView';
-import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
-import AccountBoxIcon from '@mui/icons-material/AccountBox';
-import LogoutIcon from '@mui/icons-material/Logout';
 import SearchIcon from '@mui/icons-material/Search';
+import AddCircleIcon from '@mui/icons-material/AddCircle';
 import welcomeIMG from "../../imagess/welcomeIMG.svg";
 import CalenderBox from "../../component/calander/calenderBox";
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
@@ -60,14 +57,16 @@ return (
   <div className='pageGrid'>
     <div className='item1' >
   <div className='Icon-Image'></div>
+                <div style={{marginTop:"3rem"}}>
+            <div className="Profile-Image">
+            <img src={require("../../imagess/profileDisplayIMG.jpg")} style={{borderRadius:"100%",width:"5rem",height:"5rem"}}/>
+          <h4>Saraha Conners</h4>
+          <h6>Saraha@gmail.com</h6>
+            </div>
 
-      <div style={{marginTop:"3rem"}}>
-  <div className="Profile-Image">
-  <img src={require("../../imagess/profileDisplayIMG.jpg")} style={{borderRadius:"100%",width:"5rem",height:"5rem"}}/>
-<h4>Saraha Conners</h4>
-<h6>Saraha@gmail.com</h6>
-  </div>
-      </div>
+                </div>
+                
+
 <div className='Link'>
 <nav style={{backgroundColor:"orange",marginTop:"5rem"}}>
 <ul>
@@ -125,7 +124,69 @@ return (
   <br/>
 <UplaodToBlockchainBoxes/>
 </div>
+<div className='item3'>
+        <div className="task-for-today" style={{width:"20rem"}}>
+  {/* task to do*/}
+<div className="listTask">
+  <div className='innerLInelistTask' style={{marginRight:"15px",backgroundColor:"#FE7541"}}></div>
+  <div  style={{marginRight:"70px",paddingTop:"15px",lineHeight:"15px"}}>
+    <h3>Mobile App</h3>
+    <br/>
+    <h6>Prepare Figma file</h6>
+  </div>
+  <Box sx={{margin:"5px"}}>
+            <Radio value="Hello World" name="radio-buttons" />
+            </Box>
+</div>
+{/* task to do*/}
+  {/* task to do*/}
+  <div className="listTask">
+  <div className='innerLInelistTask' style={{marginRight:"15px",backgroundColor:"#793280"}}></div>
+  <div  style={{marginRight:"70px",paddingTop:"15px",lineHeight:"15px"}}>
+    <h3>UX wireframes</h3>
+    <br/>
+    <h6>Design UX wireframes</h6>
+  </div>
+  <Box sx={{margin:"5px"}}>
+            <Radio value="Hello World" name="radio-buttons" />
+            </Box>
+</div>
+{/* task to do*/}
+  {/* task to do*/}
+  <div className="listTask">
+  <div className='innerLInelistTask' style={{marginRight:"15px",backgroundColor:"#82D1D9"}}></div>
+  <div  style={{marginRight:"70px",paddingTop:"15px",lineHeight:"15px"}}>
+    <h3>Mobile App</h3>
+    <br/>
+    <h6>Research</h6>
+  </div>
+  <Box sx={{margin:"5px"}}>
+            <Radio value="Hello World" name="radio-buttons" />
+            </Box>
+</div>
+{/* task to do*/}
+        </div>
 
+        <div className="Statistics" style={{width:"25rem",padding:"20px 10px 0 10px"}}>
+          <h2 style={{fontSize:"1.5rem",fontWeight: "500",color:"#793280",marginBottom:"1.5rem"}}>Statistics</h2>
+     <div className='statistics-boxes-container'>
+<div className='statistics-boxes'>
+  <h2>28 h</h2>
+  <h5>Tracked time</h5>
+</div>
+<div className='statistics-boxes'>
+<h2>18 h</h2>
+  <h5>Finished tasks</h5>
+</div>
+<div className='statistics-boxes addborderLines' style={{background:"white"}}>
+<AddCircleIcon/>
+  <h5>new <span>  </span> widget</h5>
+</div>
+
+     </div>
+
+        </div>
+      </div>
     </div>
   </div>
   )

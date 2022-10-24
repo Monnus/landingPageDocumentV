@@ -7,6 +7,11 @@ body{
     align-items: stretch;
    background-color: white;
    font-family: 'Nunito', sans-serif;
+   color:#793280;
+   box-sizing: 0px;
+   padding: 0px;
+   margin: 0px;
+height: auto;
 }
 
 .pageGrid{
@@ -17,6 +22,9 @@ body{
 "nav  hdr TimeTable "
 "nav main TimeTable"
 "nav main TimeTable";
+
+
+
    
 }
 .table{
@@ -52,23 +60,81 @@ nav{
   display:flex;
   flex-direction: column;
   justify-content: space-between;
+  color:#793280;
 }
 
 
 .item3{
-    grid-area:main;
- border-radius:0 0 2rem 0 ;
+height: 100%;
  display: flex;
- align-items: center;
+ flex-wrap: wrap;
+ color:#793280;
+ justify-content: space-between;
 
 }
+.listTask{
+    display:flex;
+    justify-content: space-between;
+    height:5rem;
+    width:20em;
+    box-shadow: 2px 2px 5px lightgray;
+    border-radius: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.task-for-today::before{
+    content: "Tasks for today";
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color:#793280;
+    margin-bottom: 1.5rem;
+
+}
+
+.statistics-boxes-container{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.statistics-boxes{
+    height: 7rem;
+    width:5.5rem;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    justify-content: space-around;
+    font-size: 16px;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 10px lightgray;
+    background: #F5F3F4;
+
+}
+.addborderLines{
+    border: 1.9px dashed black;
+}
+.innerLInelistTask{
+    width:0.5rem;
+    height:100%;
+    border-radius: 10px 0 0 10px;
+    
+}
+/*
+=====================================
+*/
+
 .item4{
     grid-area:TimeTable;
     background: rgba(252,245,235);
     padding:3rem 0;
+   color:#793280
+
 
 }
-
+.task-for-today{
+  padding: 1rem;
+}
 
 .item5{
  margin-top: 2rem;
