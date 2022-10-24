@@ -157,13 +157,10 @@ const UplaodToBlockchainBoxes=()=>{
   return(
     <>
     <Box sx={{display:"flex",flexDirection:"row",
- justifyContent:"space-around"}}>
-      
-        <Boxes color={"rgba(46,126,40)"} title={"Verified"}/>
-     
-        <Boxes color={"rgba(197, 57, 19)"} title={"Rejected"}/>
-    
-        <Boxes color={"rgba(255,161,54)"} title={"Pending"}/>
+ justifyContent:"auto",flexWrap:"wrap",}}>
+        <Boxes color={"#793280"} title={"Web"} title2={"Development"}/>
+        <Boxes color={"#83D0D6"} title={"Mobile App"} title2={"Design"}/>
+        <Boxes color={"#FE7541"} title={"Facebook"} title2={"Brand UI Kit"}/>
     </Box>
         </>
     )
