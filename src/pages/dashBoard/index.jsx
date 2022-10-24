@@ -8,6 +8,9 @@ import Radio from '@mui/joy/Radio';
 import Box from '@mui/joy/Box';
 import IconUser from "../../imagess/userIconImage.svg";
 import HomeIcon from '@mui/icons-material/Home';
+import ShareLocationIcon from '@mui/icons-material/ShareLocation';
+import DonutSmallIcon from '@mui/icons-material/DonutSmall';
+import SettingsIcon from '@mui/icons-material/Settings';
 import SearchIcon from '@mui/icons-material/Search';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import welcomeIMG from "../../imagess/tourist-welcome.svg";
@@ -60,7 +63,8 @@ return (
   <div className='Icon-Image'></div>
                 <div style={{marginTop:"3rem"}}>
             <div className="Profile-Image">
-            <img src={require("../../imagess/profileDisplayIMG.jpg")} style={{borderRadius:"100%",width:"5rem",height:"5rem"}}/>
+            <img src={require("../../imagess/profileDisplayIMG.jpg")} 
+            style={{borderRadius:"100%",width:"5rem",height:"5rem"}}/>
           <h4>Saraha Conners</h4>
           <h6>Saraha@gmail.com</h6>
             </div>
@@ -71,17 +75,21 @@ return (
 <div className='Link'>
 <nav style={{backgroundColor:"orange",marginTop:"5rem"}}>
 <ul>
-<li><HomeIcon fontSize='small'/>Dashboard</li>
+<li><HomeIcon fontSize='small'/><span>Dashboard</span></li>
 <br/>
-<li>Analytics</li>
+<li><DonutSmallIcon fontSize='small'/><span>Analytics</span></li>
 <br/>
-<li><FormatListBulletedIcon fontSize='small'/>Task List</li>
+<li><FormatListBulletedIcon fontSize='small'/><span>Task List</span></li>
 <br/>
-
-<li> Setting</li>
+<li><ShareLocationIcon fontSize='small'/><span>Tracking</span></li>
+<br/>
+<li><SettingsIcon fontSize='small'/><span>Setting</span></li>
 
 </ul>
 </nav>
+
+<div style={{backgroundImage:`url(${wave})`,
+width:"100%",height:'10rem',backgroundRepeat:"no-repeat",backgroundSize:'center',transform:"rotate(0.2turn)"}}></div>
 </div>
     </div>
     {/* ====================================itme2=============== */}
