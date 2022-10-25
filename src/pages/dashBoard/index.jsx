@@ -136,7 +136,12 @@ return (
   <br/>
 <UplaodToBlockchainBoxes/>
 </div>
-<div className='item3'>
+      
+   
+      </div>
+
+
+      <div className='item3'>
         <div className="task-for-today" style={{width:"20rem"}}>
   {/* task to do*/}
 <div className="listTask">
@@ -179,9 +184,9 @@ return (
 {/* task to do*/}
         </div>
 
-        <div className="Statistics" style={{display:"flex",justifyContent:"space-evenly",flexDirection:"column",width:"25rem",padding:"20px 10px 0 10px"}}>
-          <h2 style={{fontSize:"1.5rem",fontWeight: "500",color:"#793280",marginBottom:"1.5rem"}}>Statistics</h2>
-     <div className='statistics-boxes-container'>
+    <div className="Statistics" style={{display:"flex",justifyContent:"space-evenly",flexDirection:"column",width:"25rem",padding:"20px 10px 0 10px"}}>
+   <h2 style={{fontSize:"1.5rem",fontWeight: "500",color:"#793280",marginBottom:"1.5rem"}}>Statistics</h2>
+  <div className='statistics-boxes-container'>
 <div className='statistics-boxes'>
   <h2>28 h</h2>
   <h5>Tracked time</h5>
@@ -210,7 +215,18 @@ return (
 </div>
         </div>
       </div>
+
+
+      <div className='item4'>
+  <div><h1>Calander</h1></div>
+      <div className="calander">
+    clander divs
+        <CalenderBox handleCalander={handleCalander} minusDays={2}/>
+        <CalenderBox handleCalander={handleCalander} minusDays={1}/>
+        <CalenderBox handleCalander={handleCalander}/>
+      </div>
     </div>
+    
   </div>
   )
 }

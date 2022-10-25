@@ -18,6 +18,7 @@ height: auto;
     display:grid;
     flex-shrink: 1;
     grid-template-columns:repeat(3,auto-fit);
+    gap:30px;
     grid-template-areas: 
 "nav  hdr TimeTable "
 "nav main TimeTable"
@@ -78,28 +79,21 @@ margin: 0 0 0 10px;
   
 };
 
-nav{
-    height:"100%";
-  
-}
+
 /* ==============================   ============================================================== */
 
 .item2{
-  grid-area: hdr;
-  padding: 2rem ;
   display:flex;
-  flex-direction: column;
-  justify-content: space-between;
-  color:#793280;
 }
 
 
 .item3{
 height: 100%;
+padding: 10px;
  display: flex;
  flex-wrap: wrap;
  color:#793280;
- justify-content: space-between;
+ justify-content: space-around;
 
 }
 .listTask{
