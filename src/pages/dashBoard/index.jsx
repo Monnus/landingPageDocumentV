@@ -60,20 +60,23 @@ const hanleSelectFile=(e)=>{
 return (
   <div className='pageGrid'>
     <div className='item1' >
+      <div style={{textAlign:"center",alignSelf:"center"}}>
+
   <div className='Icon-Image'></div>
-                <div style={{marginTop:"3rem"}}>
+      </div>
+                <div style={{marginTop:"2rem",textAlign:"center"}}>
             <div className="Profile-Image">
             <img src={require("../../imagess/profileDisplayIMG.jpg")} 
-            style={{borderRadius:"100%",width:"5rem",height:"5rem"}}/>
-          <h4>Saraha Conners</h4>
-          <h6>Saraha@gmail.com</h6>
+            style={{borderRadius:"100%",width:"5rem",height:"5rem",boxShadow:"2px 2px 12px gray"}}/>
+          <h4 style={{fontWeight:"900"}}>Saraha Conners</h4>
+          <h5>Saraha@gmail.com</h5>
             </div>
 
                 </div>
                 
 
 <div className='Link'>
-<nav style={{backgroundColor:"orange",marginTop:"5rem"}}>
+<nav style={{marginTop:"5rem"}}>
 <ul>
 <li><HomeIcon fontSize='small'/><span>Dashboard</span></li>
 <br/>
@@ -88,8 +91,8 @@ return (
 </ul>
 </nav>
 
-<div style={{backgroundImage:`url(${wave})`,
-width:"100%",height:'10rem',backgroundRepeat:"no-repeat",backgroundSize:'center',transform:"rotate(0.2turn)"}}></div>
+
+<div className='grayLine'></div>
 </div>
     </div>
     {/* ====================================itme2=============== */}
@@ -116,7 +119,7 @@ width:"100%",height:'10rem',backgroundRepeat:"no-repeat",backgroundSize:'center'
   marginRight:"1rem", color:"white"}} type="button" onChange={(e)=>hanleSelectFile(e)}> 
   <label htmlFor='filebtn'>Add New Project</label>
   
-  <input id="filebtn" type="file"  style={{color:"rgba(0,0,0,0)"}}/>
+
     
   
   </button>
@@ -162,7 +165,7 @@ width:"100%",height:'10rem',backgroundRepeat:"no-repeat",backgroundSize:'center'
 </div>
 {/* task to do*/}
   {/* task to do*/}
-  <div className="listTask">
+  <div className="listTask"> 
   <div className='innerLInelistTask' style={{marginRight:"15px",backgroundColor:"#82D1D9"}}></div>
   <div  style={{marginRight:"70px",paddingTop:"15px",lineHeight:"15px"}}>
     <h3>Mobile App</h3>
