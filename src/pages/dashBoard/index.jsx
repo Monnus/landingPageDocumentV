@@ -220,7 +220,7 @@ return (
       <div className='item4'>
   <div><h1>Calander</h1></div>
       <div className="calander">
-    clander divs
+
         <CalenderBox handleCalander={handleCalander} minusDays={2}/>
         <CalenderBox handleCalander={handleCalander} minusDays={1}/>
         <CalenderBox handleCalander={handleCalander}/>

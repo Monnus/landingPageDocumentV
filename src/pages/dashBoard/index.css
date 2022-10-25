@@ -11,7 +11,10 @@ body{
    box-sizing: 0px;
    padding: 0px;
    margin: 0px;
-height: auto;
+height:0;
+max-width: auto;
+
+
 }
 
 .pageGrid{
@@ -19,14 +22,13 @@ height: auto;
     flex-shrink: 1;
     grid-template-columns:repeat(3,auto-fit);
     gap:30px;
+    
     grid-template-areas: 
-"nav  hdr TimeTable "
+"nav  header TimeTable "
 "nav main TimeTable"
 "nav main TimeTable";
-
-
-
-   
+height: 0;
+min-height:100vh
 }
 .table{
     border-spacing: 20px;
@@ -62,6 +64,7 @@ color:#793280;
 .item1 li{
 display:flex;
 justify-content: center;
+height:100%;
 }
 .item1 li span{
     font-size: medium;
@@ -72,7 +75,7 @@ margin: 0 0 0 10px;
 .Icon-Image{
     background-image: url("../../components/images/logo_3-removebg-preview.png");
     width: 6rem;
-    height: 6rem;
+    height: 7rem;
     background-position:center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -83,11 +86,15 @@ margin: 0 0 0 10px;
 /* ==============================   ============================================================== */
 
 .item2{
-  display:flex;
+    display:flex;
+    grid-area: header;
+
+    height: auto;
 }
 
 
 .item3{
+    grid-area: main;
 height: 100%;
 padding: 10px;
  display: flex;
@@ -160,9 +167,17 @@ justify-content: space-between;
 .item4{
     grid-area:TimeTable;
     background: rgba(252,245,235);
-    padding:3rem 0;
-   color:#793280
 
+    color:#793280
+
+
+}
+.calander{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    padding:3rem 0;
 
 }
 .task-for-today{
